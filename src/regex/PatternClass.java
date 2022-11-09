@@ -34,6 +34,7 @@ public class PatternClass {
             System.out.println("Valid Username");
         }else System.out.println("Error!");
 
+        //2nd Option
         if (userName.matches("[a-zA-Z0-9]{5,10}")) System.out.println("Valid Username");
         else System.out.println("Error!");
     }
