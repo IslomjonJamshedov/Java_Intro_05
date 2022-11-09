@@ -129,7 +129,7 @@ public class Homework03 {
         numbers1 = input.nextInt();
         numbers2 = input.nextInt();
 
-        double divide = (double)num1/(double)num2;
+        double divide = (double)numbers1/(double)numbers2;
 
 
         System.out.println(divide);

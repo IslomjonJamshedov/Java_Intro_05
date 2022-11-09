@@ -176,5 +176,7 @@ public class Homework07 {
         System.out.println("Elements that are even and greater than = " + nums.stream().filter(x -> x > 15 & x % 2 == 0).count());
         System.out.println("Elements that are odd and less than 20 = " + nums.stream().filter(x -> x < 20 & x % 2 == 1).count());
         System.out.println("Elements that less than 15 or greater than 50 = " + nums.stream().filter(x -> x < 15 | x > 50).count());
+
+
     }
 }
