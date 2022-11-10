@@ -38,5 +38,9 @@ public class MatcherClass {
         }
         System.out.println("This sentence contains "+ wordCount +" words");
 
+
+        pattern = Pattern.compile("[A-Za-z0-9_-]{9,15}");
+
+
     }
 }
