@@ -64,7 +64,7 @@ public class _14_CountDuplicates {
             }
         }
 
-//        System.out.println(dup); // -> "7,1,"
+        System.out.println(dup); // -> "7,1,"
         return dup.split(",").length;
     }
 }
