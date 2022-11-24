@@ -11,20 +11,21 @@ public class Homework09 {
         int[] numbers = {-4, 0, -7, 0, 5, 10, 45, 45};
         int count = 0;
 
-
-        String dup = "";
-
+       /*
+        boolean isFound = false;
         for (int i = 0; i < numbers.length - 1; i++) {
             for (int j = i + 1; j < numbers.length; j++) {
-                if (dup.contains(numbers[i] + "")) break;
-
-                if (numbers[i] == numbers[j]){
-                    count++;
+                if (numbers[i] == numbers[j] && !isFound){
+                    isFound = true;
+                    System.out.println(numbers[i]);
+                    break;
                 }
             }
-        }
+           System.out.println(count);
 
-        System.out.println(count);
+        }
+        */
+        
 
 
         System.out.println("\n---------TASK-2----------\n");
@@ -62,7 +63,7 @@ public class Homework09 {
 
         for (int i = 0; i < word1.length; i++) {
             for (int j = i + 1; j < word1.length; j++) {
-                if ((word1[i].equals(word1[j])) && i != j){
+                if ((word1[i].equals(word1[j])) ){
                     System.out.println(word1[j]);
                 }else System.out.println("There is no duplicates");
             }
