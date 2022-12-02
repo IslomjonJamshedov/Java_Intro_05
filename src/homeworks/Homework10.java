@@ -127,7 +127,7 @@ public class Homework10 {
 
     }
 
-
+    TASK 7
     public static int[] add(int[] a, int[] b) {
         int[] c = new int[Math.max(a.length, b.length)];
         for (int i = 0; i < c.length; i++) {
@@ -137,6 +137,7 @@ public class Homework10 {
                 c[i] += b[i];}
         }return c;
     }
+    TASK 8
     public static int findClosestTo10(int[] arr){
         int close10 = Integer.MAX_VALUE;
 
@@ -147,8 +148,5 @@ public class Homework10 {
         return close10;
 
      */
-
-
-
 
 }
