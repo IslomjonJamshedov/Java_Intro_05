@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Project08{
-
-
-
-
     //TASK 1
     public static int findClosestDistance(int[] nums){
        int closest = Integer.MAX_VALUE;

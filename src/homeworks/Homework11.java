@@ -100,11 +100,16 @@ public class Homework11 {
 
 
     //TASK 8
-    /*public static int countPrimes(int[] num){
+    public static Boolean isPrime(int num){
+        for (int i = 2; i < num - 1; i++) {
+            if(num % i == 0) return false;
+        } return true;
+    }
+    public static int countPrimes(int[] nums){
         int count = 0;
-
-        for (int i = 0; i < num.length; i++) {
-            if (num % num[i] == 0)count++;
-        }return count;*/
+        for (int num : nums) {
+            if(num > 1 & isPrime(num)) count++;
+        } return count;
+    }
     }
 
