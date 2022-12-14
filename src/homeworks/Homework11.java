@@ -35,6 +35,8 @@ public class Homework11 {
 
         int[] num = {7, 4, 11, 23, 17};
        // System.out.println(countPrimes(num));
+        String[] str = {"appium", "123", "ABC", "java"};
+        System.out.println(Arrays.toString(noA(str)));
 
     }
 
@@ -86,14 +88,16 @@ public class Homework11 {
         for (int i = 0; i < str.length; i++) {
             if (str[i].toLowerCase().startsWith("a")) str[i] = "###";
         }return str;
+
+
     }
 
     //TASK 7
      public static int[] no3or5(int[] num){
          for (int i = 0; i < num.length; i++) {
              if (num[i] % 15 == 0) num[i] = 101;
-             else if (num[i] % 5 == 0) num[i] = 100;
-             else if (num[i] % 3 == 0) num[i] = 99;
+             else if (num[i] % 3 == 0) num[i] = 100;
+             else if (num[i] % 5 == 0) num[i] = 99;
          }return num;
 
     }
