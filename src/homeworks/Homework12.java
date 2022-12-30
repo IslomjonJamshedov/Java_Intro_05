@@ -1,6 +1,7 @@
 package homeworks;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Objects;
 
 public class Homework12 {
@@ -26,10 +27,7 @@ public class Homework12 {
         System.out.println(hasUpperCase(str4));
 
         System.out.println("\n---------TASK-5---------\n");
-        int num = 1;
-        int num1 = 2;
-        int num2 = 3;
-        System.out.println(middleInt(num, num1, num2));
+        System.out.println(middleInt(4,6,9));
 
         System.out.println("\n---------TASK-6---------\n");
         int[] arr = {13, 2, 3,13,13};
@@ -48,7 +46,7 @@ public class Homework12 {
         String exp = "";
 
         for (int i = 0; i < str.length(); i++) {
-            if (Character.isLetter(str.charAt(i))) {
+            if (!Character.isLetter(str.charAt(i))) {
                 exp += str.charAt(i);
             }
         }
@@ -69,6 +67,7 @@ public class Homework12 {
             }
         }
         return exp1;
+        //return str.replaceAll("[aeiouyAEIOUY]", ""); <- This way is regex way of solving this task
     }
 
     //TASK 3
@@ -76,7 +75,7 @@ public class Homework12 {
         int num = 0;
         for (int i = 0; i < str.length(); i++) {
             if (Character.isDigit(str.charAt(i))) {
-                num += str.charAt(i);
+                num += Integer.parseInt(String.valueOf(str.charAt(i)));
             }
         }
         return num;
@@ -96,10 +95,10 @@ public class Homework12 {
 
     //TASK 5
     public static int middleInt(int num1, int num2, int num3) {
-        int min = Math.min(Math.min(num1, num2), num3);
-        int max = Math.max(Math.max(num1, num2), num3);
+        int[] arr = new int[]{num1,num2,num3};
+        Arrays.sort(arr);
 
-        return max - min;
+        return arr[arr.length/2];
     }
 
     //TASK 6

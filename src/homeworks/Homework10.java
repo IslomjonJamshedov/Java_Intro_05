@@ -149,4 +149,27 @@ public class Homework10 {
 
      */
 
+
+
+
+
+
+
+    public static int[] add3(int[] nums){
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] += 3;
+
+        }return nums;
+        }
+
+
+        public static int addNumbersInString(String str){
+            int num = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+                if (Character.isDigit(str.charAt(i))){
+                    num += Integer.parseInt("" + str.charAt(i));
+                }
+            }return num;
+        }
 }
