@@ -1,6 +1,6 @@
 package homeworks;
 
-public class HomeWork14 {
+public class Homework14 {
 
     public static void main(String[] args) {
         System.out.println("\n--------TASK-1-----------\n");
