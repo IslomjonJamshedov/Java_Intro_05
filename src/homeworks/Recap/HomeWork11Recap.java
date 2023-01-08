@@ -1,4 +1,4 @@
-package homeworks;
+package homeworks.Recap;
 
 public class HomeWork11Recap {
     public static void main(String[] args) {

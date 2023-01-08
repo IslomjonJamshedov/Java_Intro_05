@@ -30,6 +30,16 @@ public class Homework13 {
         //TASK 6
         System.out.println(removeStringCharacters("123Java #$%is fun"));
 
+        //TASK 8
+        String[] ar1 = {"Java", "is", "fun"};
+        String[] ar2 = {"abc", "xyz", "fun"};
+        System.out.println(removeAndReturnCommons(new ArrayList<>(Arrays.asList("Java", "is", "fun")),
+        new ArrayList<>(Arrays.asList("Java", "is", "xc"))));
+
+        System.out.println(removeAndReturnCommons(new ArrayList<>(Arrays.asList("Java", "C#", "fun")),
+                new ArrayList<>(Arrays.asList("C#", "is","Java","C#"))));
+
+
 
     }
 
@@ -125,12 +135,12 @@ public class Homework13 {
 
 
         //TASK 8
-        public static List<String> removeAndReturnCommons(List<String> list1, List<String> list2) {
-            List<String> commons = new ArrayList<>();
+        public static ArrayList<String> removeAndReturnCommons(List<String> list1, List<String> list2) {
+           ArrayList<String> commons = new ArrayList<>();
             for (String element : list1) {
                 if (list2.contains(element)) {
                     commons.add(element);
-                    list2.remove(element);
+                    break;
                 }
             }
             return commons;
