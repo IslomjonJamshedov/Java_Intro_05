@@ -61,7 +61,7 @@ public class Homework14 {
             if (Character.isDigit(str.charAt(i))) num += Integer.parseInt("" + str.charAt(i));
         }return num;
     }
-
+    //TASK 4
     public static int findBiggestNumber(String str){
         int max = 0;
         int num = 0;
@@ -76,7 +76,7 @@ public class Homework14 {
         }
         return max;
     }
-
+    //TASK 5
     public static String countSequenceOfCharacters(String s) {
         if (s.isEmpty()) {
             return "";
