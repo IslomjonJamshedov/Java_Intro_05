@@ -15,6 +15,10 @@ public class Homework15 {
         System.out.println(Arrays.toString(findUniques(new int[] {1, 2, 3, 4}, new int[]{3, 4, 5, 5})));
 
         //TASK 4
+        System.out.println(isPowerOf3(6));
+
+        //TASK 5
+
 
 
     }
@@ -70,6 +74,9 @@ public class Homework15 {
         }
         return uniques;
     }
+
+
+
 
     public static boolean isPowerOf3(int num){
         boolean flag = false;
